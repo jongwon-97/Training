@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>내가 좋아하는 음악</title>
+ </head>
+ <body>
+  <h1>좋아하는 음악 모음</h1>
+  <hr>
+  <a href="https://www.pixabay.com">무료 이미지,영상,오디오 다운로드 사이트</a><br>
+  <a href="https://www.w3cschools.com">프로그램 소스 공부 사이트</a><br>
+  <audio controls autoplay>
+	<source src="./resource/chandelier-sad-relaxing-piano-music-230355.mp3" type="audio/mpeg">
+	오디오 기능을 지원하지 않는 브라우저 입니다.
+  </audio>
+  <audio controls>
+	<source src="./resource/invisible-piano-music-201838.mp3" type="audio/mpeg"autoplay="true">
+  </audio>
+ </body>
+</html>

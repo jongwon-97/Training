@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="박종원">
+  <meta name="Keywords" content="iframe,이너프레임,프레임연습">
+  <meta name="Description" content="이너프레임 기능 연습을 위한 내용 작성 페이지">
+  <title>이너프레임에 들어갈 내용 작성</title>
+  
+<style type="text/css">
+div { 
+	border:2px;
+	background-color:skyblue;
+	font-size:20px
+	font-weight:bold;
+	}
+h1 {
+    background-color:#0066ff;
+	}
+#yt01{ 
+	background-color:yellow;
+	font-size:20px
+	font-weight:bold;
+	}
+#yt02{ 
+	background-color:red;
+	font-size:20px
+	font-weight:bold;
+	}
+#yt03{ 
+	background-color:blue;
+	border-radius:20px;
+	}
+#yt04{ 
+	background-color:green;
+	border-radius:40%;
+	}
+#pre1{ 
+	background-color:pink;
+	font-size:20px;
+	border-radius:50px;
+	}
+#pre2{ 
+	color:white;
+	font-size:15px;
+	background-color:black;
+	}
+.pre3{
+	border-left: 6px solid red;
+	}
+.pre4{
+	border-style:dotted;
+	border-width:5px;
+	}
+.rcorners3{
+	color:black;
+	border-radius:25px;
+	background: url(./resource/background-3104413_1280.jpg);
+	background-position:left top;
+	background-repeat:repeat;
+	padding:20px;
+	width:800px;
+	height:350px;}
+	
+  </style>
+
+ </head>
+ <body>
+  <center><h1>애&nbsp;&nbsp;국&nbsp;&nbsp;가</h1>
+  
+  <div class="pre4 pre3">
+  <u><em>
+  <strong>
+  동해물과 백두산이 마르고 닳도록<br> 
+  하느님이 보우하사 우리나라 만세</strong>
+  </em></u><br>
+  
+  <font size="6" color="#ff0000">무궁화 삼천리 화려강산</font><br> 
+  <p>대한사람 대한으로 길이 보전하세</p><br>
+  </div>
+  <a href="https://www.editplus.com/kr/download.html" target="blank">
+ <img src="https://www.editplus.com/kr/pic/escomp-logo.gif" width="500" height="200" border="5" alt="에디트플러스 로고 이미지" style="border-color:#0000cc;">
+  </a><p></p>
+  <a href="https://www.naver.com">네이버</a><br>
+  <a href="https://www.google.com">구글</a><br>
+  <hr>
+  <!-- 좋아하는 가수  -->
+  &copy; 아래 내용은 주식회사 와이지엔터테인먼트의 자료입니다.
+  참고 사이트 주소는 아래와 같습니다.<br>
+  <table class="rcorners3" border="1" width="30%" height="20%" >
+  <!-- <tr bgcolor="#ffff66"> -->
+  <tr style= background-color:#ffff66;>
+	<th>번호</th>
+	<th>가수명</th>
+  </tr>
+  <tr>
+	<td align=center>1</td>
+	<td>블랙핑크</td>
+  </tr>
+  </tr>
+  <tr>
+	<td align=center>2</td>
+	<td>악동뮤지션</td>
+  </tr>
+  </table>
+  <br>
+  <blockquote id="yt04">
+  [출처:나무위키]<br>
+	엔터테인먼트 업체 블랙핑크,트레저,베이비몬스터,위너,악뮤등 프로필 제공.<br>
+	1996년 3월,양현석이 서태지와 아이들 해체 이후 설립한 연예 기획사.<br>
+  </blockquote>
+  <pre id="pre1" name="artist_all">
+	<table>
+	<tr>
+	<td>
+	-가수 : 션,악뮤,위너,블랙핑크,은지원,베이비몬스터 등
+	
+	-배우 : 김희애,차승원,경수진,유인나,장현성 등
+	
+	-프로듀서 : 양현석(총괄 프로듀서),DEE.P CHOICE37(메인프로듀서) 등
+	</td>
+	</tr>
+	</table>
+  </pre>
+ <pre align=left id="pre2" class="rcorners3" name="news_202408">
+ <h2>2024.8	최신 기사 내용</h2>
+ 
+ 이기훈 연구원은 “신인에 대한 투자 비용이 공격적으로 집행되고 있는 가운데, 
+ 기존 아티스트들의 활동 공백으로 전속금 등 무형자산 상각비가 부담으로 작용하고 있다”라고 밝혔다.
+
+ 와이지엔터테인먼트의 2분기 매출액은 전년 동기 대비 43% 감소한 900억원, 110억원의 영업적자를 기록했다.
+
+ 이 연구원은 “프로모션 성격의 투자비 약 83억원과 프로모션 전속계약 등의 
+ 무형자산 상각비 37억원 등의 비용이 있었다”며 
+ “일본향 로열티 가결산 조정과 블랙핑크 협찬금 소송 진행에 따른 대손충당금(21억원) 등이 추가로 반영돼 부진했다”고 설명했다.
+
+ 그는 “내년에는 블랙핑크의 컴백 및 월드투어와 베이비몬스터의 첫 수익화, 
+ 그리 신인 남자 그룹의 데뷔 등으로 실적과 모멘텀이 모두 집중돼있다”면서도 
+ “3분기는 일시적인 컴백 공백에 상각비 부담이 겹치면서 또 한 번의 적자가 예상된다”고 말했다.
+ </pre>
+  </center>
+ <div id="yt01">
+		<video width="400" height="200" controls>
+			<source src=".\resource\179333-861795769_tiny.mp4" type="video/mp4">
+		</video>
+		<video width="400" height="200" controls>
+			<source src=".\resource\25727-352026514_tiny.mp4" type="video/mp4">
+		</video>
+		
+<div id="yt02">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ydf1RPJewTs?si=mxrfEfJC7fTfJPab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+		</iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/wDSRs9PCtH8?si=1aAqnEEwRlz8FFYl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div id="yt03">
+		<iframe id="if02" width="400" height="200" 
+		src=".\resource\179333-861795769_tiny.mp4" 
+		title="YouTube video player" 
+		frameborder="1" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		referrerpolicy="strict-origin-when-cross-origin" 
+		allowfullscreen></iframe>
+		<br>
+		<iframe id="if03" name= "if03" width="800" height="200" 
+		src="./favorite.html"  
+		frameborder="1"
+		scrolling="auto">
+		<h1>안녕하세요</h1>
+		</iframe>
+	
+ </div>
+ </body>
+</html>
