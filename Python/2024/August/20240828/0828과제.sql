@@ -40,14 +40,13 @@ orderid int not null primary key,
 cusid int not null,
 bookid int not null,
 saleprice int not null,
-orderate date,
+orderate date not null,
 foreign key(cusid) references customer(cusid)
 on delete cascade,
 foreign key(bookid) references book(bookid)
 on delete cascade
 );
-alter table orders modify orderate date not null;
-drop table orders;
+
 insert into orders values(1,1,1,6000,20200701);
 insert into orders values(2,1,3,21000,20200702);
 insert into orders values(3,2,5,8000,20200703);
