@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="test">다음에 학습할 내용은 HTML입니다.</p>
+    <button id="test1" onclick="replace()">HTML 학습이 끝났으면 누르세요.</button>
+    <script>
+        function replace(){
+            let str=document.getElementById("test").innerHTML;
+            document.getElementById("test").innerHTML= str.replace(/HTML/i,'Javascript')
+            let str1=document.getElementById("test1").innerHTML;
+            document.getElementById("test1").innerHTML= str1.replace(/HTML/i,'Javascript')
+        }
+
+    </script>
+</body>
+</html>

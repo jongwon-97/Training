@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .display{
+            font-size: 1.5em;
+            font-weight: bold;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="date"></h1>
+    <p>현재시각<span id="current" class="display"></span></p>
+
+    <Script>
+        setInterval(setclock,1000);
+        setInterval(displaynow,1000);
+        
+        function setclock(){
+            let day=["일요일","월요일","화요일","수요일","목요일","금요일","토요일"]
+            let now = new Date();
+            let d = now.getMonth()+1+"월 "+now.getDate()+"일 " + day[now.getDay()];
+            document.getElementById('date').innerHTML=d
+        }
+        function displaynow(){
+            let now = new Date();
+            let currentTime = now.toLocaleTimeString();
+            document.getElementById("current").innerHTML=currentTime
+        }
+    </Script>
+</body>
+</html>

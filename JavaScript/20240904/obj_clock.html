@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="date"></h2>
+    <h2 id="clock"></h2>
+
+    <script>
+        setInterval(setclock,1000); //1초가 되면 처리 setTimeout('setclock()',1000); 
+                                    //               setclock(); 을 사용한것과 같음
+        function setclock(){
+            let now =new Date();
+            let d = now.getMonth() + 1 +" 월" + now.getDate() + "일"
+            let s=now.getHours() +":"+ now.getMinutes()+":"+now.getSeconds();
+            document.getElementById('clock').innerHTML=s;
+            document.getElementById('date').innerHTML=d;
+            //setTimeout('setclock()',1000);
+        }
+
+        //setclock();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>팩토리얼을 계산해봅시다!!</h1>
+    정수를 입력하시오:
+    <form>
+        <input id="num">
+        <br><br>
+        <button onclick="fact()">팩토리얼 계산</button>
+        <input type="reset" value="초기화">
+    </form>
+    <p id="res"></p>
+    <script>
+        function fact() {
+            let i, num, f;
+            f=1;
+            num = document.getElementById("num").value;
+            for(i=1; i <= num; i ++){
+                f = f * i;
+            }
+            document.getElementById("res").innerHTML="정수"+num+"의 팩토리얼값은:"+f;
+        }
+    </script>
+</body>
+</html>
