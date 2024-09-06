@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //onchange onblur 같은역할
+        //x.value=x.value.toLowerCase();
+        function sub(){
+            let x =document.getElementById("test");
+            x.innerHTML ="영어단어는 반드시 소문자로 입력하세요!"
+            
+        }
+    </script>
+</head>
+<body>
+    영어단어:<input type="text" id="name" onblur="sub()"> 
+    <p id="test">입력필드를 벗어나면 소문자로 변경됩니다.</p>
+</body>
+</html>

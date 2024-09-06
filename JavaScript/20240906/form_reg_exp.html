@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checknumber(elem,msg){
+            let exp = /^[0*9]+$/;
+            if(elem.value.match(exp)){
+                return true;
+            }
+            else{
+                alert(msg);
+                elem.focus();
+                return false;
+            }
+
+        }
+    </script>
+    <form>
+        전화번호(-없이 입력):<input type="text" id="phone"/>
+        <input type="button" 
+        onclick="checknumber(document.getElementById('phone'),'숫자만 입력하세요.')" 
+        value="확인">
+    </form>
+</body>
+</html>

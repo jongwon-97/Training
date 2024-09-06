@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1부터 100사이의 정수를 입력하시오.</p>
+    <input type="text" id="number">
+    <input type="button" onclick="sub()" value="제출">
+    <p id="p1"></p>
+    <script>
+        //eval()은 오류가 많아서 잘 쓰이지 않는다
+        function sub(){
+            let s=document.getElementById("number").value;
+            let solution=eval(s);
+            if (1 <= solution && 100>=solution){
+                document.getElementById("p1").innerHTML="올바른 입력입니다."
+            }
+            else{
+                document.getElementById("p1").innerHTML="입력값이 올바르지 않습니다."
+            }
+
+        }
+    </script>
+</body>
+</html>

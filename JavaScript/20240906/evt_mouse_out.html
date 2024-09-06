@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mousein(elem){
+            elem.style.border="2px solid red";
+        }
+        function mouseout(elem){
+            elem.style.border="";
+        }
+    </script>
+</head>
+<body>
+    <div style="background-color:yellow; width:200px;"
+    onmouseover="mousein(this)" onmouseout="mouseout(this)">
+    마우스를 이 요소 위에 이동하세요.
+    </div>
+</body>
+</html>
