@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>List item1</li>
+        <li>List item2</li>
+        <li>List item3</li>
+        <li>List item4</li>
+        <li>List item5</li>
+    </ul>
+    <script>
+        let list=document.getElementsByTagName("ul")[0]; //list 는 ul태그에 있는 모든값을 가져온다 
+                                                         //[n]  n번째에 있는 ul을 가르킨다
+        let allItems=list.getElementsByTagName("li");    //allItems 에 리스트 태그에 있는 모든값을 가져온다
+        let length=allItems.length
+        
+        for(let i=0; i<length; i++){
+            alert(allItems[i].innerHTML);
+        }
+    </script>
+</body>
+</html>

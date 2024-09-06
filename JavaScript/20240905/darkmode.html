@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let mode='white';
+        function modechange(){
+            if(mode=='white'){
+                document.getElementsByTagName("body")[0].style.backgroundColor="black"
+                document.getElementsByTagName("body")[0].style.color="white"
+                mode='black'
+            }
+            else{
+                document.getElementsByTagName("body")[0].style.backgroundColor="white"
+                document.getElementsByTagName("body")[0].style.color="black"
+                mode='white'
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>다크 모드와 라이트 모드</h1>
+    <p>버튼을 누르면 다크모드와 라이트 모드가 토글 합니다.</p>
+    <input type="button" onclick="modechange()" value="다크모드 토글">
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ 
+            font-family: 굴림,sans-serif;
+            text-align: center;
+            font-size: 20px;
+            margin: 10px auto;
+        }
+    </style>
+    <script>
+        function change(){
+            let x = document.getElementById("form1");
+            let s = "";
+            for (let i=0; i<x.length; i++ ){
+                s += x.elements[i].value+"<br>"
+        document.getElementById("p1").innerHTML=s
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>입력한 문자열을 출력해보세요.</p>
+    <form id="form1"></form>
+        이름:<input type="text" id="fname" value=""><br><br>
+        주소:<input type="text" id="lname" value=""><br><br>
+    </form>
+    <button onclick="change()">출력</button>
+    <p id="p1">결과는 여기에 표시하세요.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calc(){
+            let res;
+            let radius=document.getElementById("radius").value;
+            let list=document.getElementsByName("shape");
+            
+            if (list[0].checked)
+                res=Math.PI*Math.pow(radius,2);
+              
+            else
+                res=(4.0/3.0)*Math.PI*Math.pow(radius,3);
+            document.getElementById("result").value=res;
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+    반지름<input type="text" id="radius">
+    <input type="radio" name="shape" value="area">AREA
+    <input type="radio" name="shape" value="volume">VOLUME<br>
+    연산결과<input type="text" id="result" value="">
+    <input type="button" onclick="calc()"value="계산">
+    <input type="reset" value="reset">
+    </form>
+</body>
+</html>
