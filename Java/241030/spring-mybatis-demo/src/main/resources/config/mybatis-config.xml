@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 타입 별칭 설정 ============================ -->
+
+    <!--  도메인이 너무 길어서 Member로 줄여놓음 -->
+    <typeAliases>
+        <typeAlias type="com.kosmo.user.domain.MemberDTO" alias="Member"/>
+    </typeAliases>
+
+</configuration>

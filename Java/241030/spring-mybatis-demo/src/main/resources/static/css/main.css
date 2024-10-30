@@ -1,0 +1,79 @@
+/* main.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #ffe0e0, #fff5d7);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+}
+
+
+.time-display {
+    margin-top: 20px;
+}
+
+.time-display h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.time-display p {
+    font-size: 1.5rem;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.features {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* 상하 간격 조정 */
+    max-width: 800px; /* 최대 너비 조정 */
+}
+
+.features h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around; /* 균등하게 배치 */
+    flex-wrap: wrap; /* 줄 바꿈 허용 */
+}
+
+.feature-item {
+    width: 30%; /* 각 아이템 너비 */
+    margin: 10px 0; /* 상하 간격 조정 */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h4 {
+    margin: 0;
+    color: #ff6f61;
+}

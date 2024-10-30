@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* login.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e8f5);
+}
+
+.login-wrap {
+    max-width: 500px; /* 로그인 박스 너비 조정 */
+    margin: 80px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-wrap h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 12px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%; /* 너비를 90%로 유지 */
+    max-width: 350px; /* 최대 너비를 줄여서 크기 조정 */
+    padding: 10px; /* 패딩 조정 */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff8a80;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px; /* 체크박스와 버튼 간의 간격 조정 */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px; /* 체크박스와 텍스트 간격 조정 */
+    margin-left: 20px; /* 왼쪽 여백 제거 */
+}
