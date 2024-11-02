@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* 컨테이너 스타일 */
+.boardWrap {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 스타일 */
+.boardWrap h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* 모던한 느낌을 위한 폰트 추가 */
+}
+
+/* 입력 폼 스타일 */
+.boardWrap form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* 입력 항목 스타일 */
+.boardWrap .boardUl {
+    list-style-type: none;
+    padding: 0;
+}
+
+.boardWrap .boardUl li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.boardWrap .boardUl input[type="text"],
+.boardWrap .boardUl input[type="password"],
+.boardWrap .boardUl textarea {
+    width: 95%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* 포커스 효과 */
+.boardWrap .boardUl input[type="text"]:focus,
+.boardWrap .boardUl input[type="password"]:focus,
+.boardWrap .boardUl textarea:focus {
+    border-color: #ff6f61;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+}
+
+/* 읽기 전용 필드 */
+.boardWrap .boardUl input[readonly] {
+    background-color: #f1f1f1;
+    color: #888;
+}
+
+/* 버튼 스타일 */
+.boardWrap .divBtn {
+    display: flex;
+    justify-content: flex-end; /* 버튼을 오른쪽 정렬 */
+    gap: 10px; /* 버튼 간격 */
+    margin-top: 20px;
+}
+
+.boardWrap .divBtn button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.boardWrap .divBtn button:hover {
+    background-color: #ff8a80;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 특정 버튼 스타일 (삭제 버튼, 취소 버튼 등 추가적인 버튼이 있을 경우) */
+.boardWrap .divBtn .cancelBtn {
+    background-color: #999;
+}
+
+.boardWrap .divBtn .cancelBtn:hover {
+    background-color: #bbb;
+}
