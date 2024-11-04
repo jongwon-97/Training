@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지 인덱스</title>
+    <style>
+        /* 배경 애니메이션 */
+        @keyframes backgroundAnimation {
+            0% { background-color: #ff9a9e; }
+            25% { background-color: #fad0c4; }
+            50% { background-color: #fad0c4; }
+            75% { background-color: #ff9a9e; }
+            100% { background-color: #ff9a9e; }
+        }
+
+        /* 텍스트 애니메이션 */
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 버튼 애니메이션 */
+        @keyframes buttonAnimation {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        /* 공통 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeInText 1.5s ease-in-out;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 3em;
+            margin: 0;
+            animation: fadeInText 2s ease-in-out;
+        }
+
+        p {
+            color: #666;
+            margin-top: 10px;
+            font-size: 1.2em;
+            animation: fadeInText 2.5s ease-in-out;
+        }
+
+        /* 버튼 스타일 */
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            color: white;
+            background-color: #4CAF50;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: transform 0.3s, background-color 0.3s;
+            animation: buttonAnimation 3s ease-in-out;
+        }
+
+        /* 버튼 호버 효과 */
+        a:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome KOTOKI!</h1>
+    <script>
+        location.href="/main";
+    </script>
+    <p>이 페이지는 스프링 부트를 통해 구현된 인덱스 페이지입니다.</p>
+    <a href="/members">회원 목록 보기</a>
+</div>
+</body>
+</html>

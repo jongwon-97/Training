@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+/* 공통 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', Arial, sans-serif;
+    background-color: #fff8f0;
+}
+/* 헤더 스타일 */
+.header {
+    display: flex;
+    justify-content: space-between; /* 좌우 배치 */
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #fff;
+}
+/* 스타일 수정 */
+.header .title {
+    text-align: left;
+    padding-left: 20px; /* 왼쪽 여백 조정 */
+}
+.header .title h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    animation: slideIn 1s ease-out;
+}
+.header .title p {
+    margin: 5px 0 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+    opacity: 0.9;
+    animation: fadeIn 1.5s ease-out;
+}
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* 네비게이션 메뉴 */
+.navi .menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+.navi .menu li a {
+    color: #333;
+    font-weight: 600;
+    background-color: #ffe0e0;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.navi .menu li a:hover {
+    background-color: #ff8a80;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+/* 컨테이너 스타일 */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.container:hover {
+    transform: none;
+}
+
+/* 인기 상품 버튼 */
+.button {
+    display: inline-block;
+    background-color: #ff8a80;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+    background-color: #ff6f61;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 배너 스타일 */
+.banner {
+    background-image: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 20px 0;
+    animation: bounce 1.2s ease-in-out infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* footer 스타일 */
+.footer {
+    height: 10vh;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .header .title h1 {
+        font-size: 2.2rem;
+    }
+    .navi .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* 회원 목록 테이블 스타일 */
+#members {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+#members th, #members td {
+    padding: 15px; /* 셀 내부 여백 추가 */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#members th {
+    background-color: #f8d7da;
+    color: #333;
+    font-weight: bold;
+}
+
+#members tr:hover {
+    background-color: #f1f1f1; /* 행 호버 효과 */
+}
+
+#members tbody tr:nth-child(even) {
+    background-color: #fafafa; /* 짝수 행 배경색 */
+}
+
+.mstate활동회원 {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.mstate탈퇴회원 {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* 수정 | 삭제 링크 스타일 */
+#members a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+#members a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

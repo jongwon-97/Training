@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/* 전체 배경 및 글 목록 컨테이너 */
+.wrap {
+    width: 95%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrap h1 {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 글 목록 스타일 */
+.boardList {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 0.7fr 3fr 1fr 1.5fr 1fr; /* 번호, 제목, 작성자, 작성일, 조회수 */
+    gap: 0px; /* 항목 간격 제거 */
+    list-style-type: none;
+    padding: 0;
+}
+
+/* 헤더 스타일 */
+.boardList > li.bheader {
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    padding: 12px 10px;
+    border-top: 2px solid #ff6f61;
+}
+
+/* 본문 항목 스타일 */
+.boardList > li {
+    padding: 10px 8px;
+    background-color: transparent; /* 배경색 제거로 깔끔하게 */
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd; /* 항목 구분선 추가 */
+    transition: none; /* hover 효과 없음 */
+}
+
+/* 제목 항목 왼쪽 정렬 */
+.board-title {
+
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .boardList {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrap h1 {
+        font-size: 2rem;
+    }
+}
+span.new{
+    background-color: #ff0000; /* 배경 빨강 */
+    color: #ffffff; /* 텍스트 흰색 */
+    font-weight: bold;
+    font-size: 0.75em;
+    padding: 2px 6px; /* 크기 조정 */
+    border-radius: 12px; /* 둥근 모서리 */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* 살짝 그림자 효과 */
+}
+
+.pagination-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.divTotal {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* 페이지 네비게이션 */
+.pagination {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ff6f61;
+    font-weight: bold;
+    border: 1px solid #ff6f61;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+.pagination a.active {
+    background-color: #ff6f61;
+    color: #fff;
+    border-color: #ff6f61;
+    pointer-events: none;
+}
