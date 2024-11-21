@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper
+3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kosmo.nexus.mapper.MemberMapper">
+    <!-- 로그인 기능 -->
+    <select id="login" resultType="Member" parameterType="Member">
+        SELECT member_id, member_pw, member_name, member_role
+        FROM c_member
+        WHERE member_id = #{member_id} AND member_pw = #{member_pw}
+    </select>
+
+    <!-- 회원 조회 (아이디로 검색) -->
+    <select id="findMemberByUserId" resultType="Member" parameterType="string">
+        SELECT member_id, member_pw, member_name, member_role
+        FROM c_member
+        WHERE member_id = #{value}
+    </select>
+
+    <!-- 회원 삽입 기능 (회원 가입) -->
+    <insert id="insertMember" parameterType="Member">
+        INSERT INTO c_member (
+        member_id, member_pw, member_name, member_email, member_phone,
+        member_address, member_gender, member_birth, member_role, member_status, member_start_date
+        ) VALUES (
+        #{member_id}, #{member_pw}, #{member_name}, #{member_email}, #{member_phone},
+        #{member_address}, #{member_gender}, #{member_birth}, 'USER', 'ACTIVE', sysdate
+        )
+    </insert>
+</mapper>
